@@ -1,0 +1,136 @@
+body {
+  max-width: 540px;
+  min-width: 320px;
+  margin: 0 auto;
+  font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei",
+    STiXhei, hei;
+  color: #000;
+  background: #f2f2f2;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  height: 2000px;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+div {
+  box-sizing: border-box;
+}
+/* 搜索模块 */
+.search-index {
+  /* display: flex; */
+  position: fixed;
+  top: 0;
+  left: 50%;
+  /* 固定盒子宽度 */
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  width: 100%;
+  min-width: 320px;
+  max-width: 540px;
+  height: 44px;
+  background-color: #f6f6f6;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.search {
+  position: relative;
+  height: 26px;
+  line-height: 22px;
+  padding-top: 2px;
+  border: 1px solid rgb(39, 106, 194);
+  /* flex: 1; */
+  font-size: 12px;
+  color: #666;
+  margin: 7px 10px;
+  padding-left: 25px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.search::before {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  content: "\e986";
+  font-family: "icomoon";
+}
+nav {
+  border-radius: 8px;
+  margin: 45px 4px 3px;
+  overflow: hidden;
+}
+.nav-commom {
+  display: flex;
+  height: 88px;
+  background-color: skyblue;
+}
+.nav-items a:nth-child(1) {
+  border-bottom: 2px solid rgb(243, 242, 242);
+}
+.nav-items:nth-child(1) a {
+  border: 0;
+  background: url(../images/mainnav.png) no-repeat 0 -257px;
+  /* background-size: contain; */
+}
+.nav-items {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.nav-items a {
+  flex: 1;
+  text-align: center;
+  line-height: 44px;
+  color: #f2f2f2;
+  font-size: 14px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+.nav-items:nth-child(-n + 2) {
+  border-right: 2px solid rgb(243, 242, 242);
+}
+.nav-commom:nth-child(1) {
+  background: -webkit-linear-gradient(left, #fa5a5a, #fa994d);
+}
+.nav-commom:nth-child(2) {
+  margin: 3px 0;
+  background: -webkit-linear-gradient(left, #2373b4, #5872aa);
+}
+.nav-commom:nth-child(3) {
+  background: -webkit-linear-gradient(left, #1ed89a, #4da58b);
+}
+.subnav-entry {
+  display: flex;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 0 4px;
+  flex-wrap: wrap;
+  padding: 5px 0;
+}
+.subnav-entry li {
+  flex: 20%;
+}
+.subnav-entry a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subnav-entry-icon {
+  width: 28px;
+  height: 28px;
+  background-color: skyblue;
+  margin-top: 4px;
+  background: url();
+  background-size: 28px auto;
+}
+.sale-box {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  margin: 4px;
+}
+.sales-hd {
+  height: 44px;
+  border-bottom: 1px solid #ccc;
+}
